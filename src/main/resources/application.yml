@@ -1,0 +1,18 @@
+spring:
+  jpa:
+    hibernate:
+      ddl-auto: update
+
+  datasource:
+    url: jdbc:mysql://localhost:3306/mercadolivro?createDatabaseIfNotExist=true
+    username: root
+    password: w0rdp@ss
+  jackson:
+    default-property-inclusion: non_null
+  mvc:
+    pathmatch:
+      matching-strategy: ant_path_matcher
+
+jwt:
+  secret: bfb6561a-476d-42f5-b926-577d317fcab8
+  expiration: 99999
